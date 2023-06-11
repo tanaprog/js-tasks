@@ -5,7 +5,12 @@
  * @args arg: array
  */
 
-function sum(array) {}
+sum = function (array) {
+    return array.reduce((a,b) => a + b, 0)
+    if (array === []) {
+        return console.log("Пустой массив")
+    }
+}
 
 console.log(`Сумма чисел массива ${sum([1, 3, 23, -5])}`);
 console.log(`Сумма чисел массива  ${sum([9])}`);
