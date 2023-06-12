@@ -5,7 +5,7 @@
  * @args arg: array
  */
 
-sum = function (array) {
+function sum(array) {
     return array.reduce((a,b) => a + b, 0)
     if (array === []) {
         return console.log("Пустой массив")
