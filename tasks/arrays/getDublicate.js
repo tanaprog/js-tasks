@@ -16,4 +16,16 @@
  * @args arg: array
  */
 
-function getDublicate() {}
+function getDublicate(array) {
+    let result = {}
+    for (let i = 0; i < array.length; ++i) {
+        let num = array[i]
+        if(result[num] != undefined)
+        {++result[num]}
+        else 
+        {result[num] = 1}
+    }
+    for (let key in result){
+    console.log('число ' + key + ' == ' + result[key] )}
+}
+console.log(`${getDublicate([1, 1, 1, 3, 23, 23, -5])}`);

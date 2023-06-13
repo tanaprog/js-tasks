@@ -6,9 +6,12 @@
  * @args arg: array
  */
 
-function getMaxNumber(array) {}
+function getMinNumber(array) {
+    let min = Math.min.apply(null, array)
+    console.log(min)
+}
 
-console.log(`Минимальное число массива ${getMaxNumber([23, 504, -3, 22])}`);
-console.log(`Минимальное число массива ${getMaxNumber([-23, -54, -3, -2])}`);
-console.log(`Минимальное число массива ${getMaxNumber([])}`);
-console.log(`Минимальное число массива ${getMaxNumber([5])}`);
+console.log(`Минимальное число массива ${getMinNumber([23, 504, -3, 22])}`);
+console.log(`Минимальное число массива ${getMinNumber([-23, -54, -3, -2])}`);
+console.log(`Минимальное число массива ${getMinNumber([])}`);
+console.log(`Минимальное число массива ${getMinNumber([5])}`);
