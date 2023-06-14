@@ -19,9 +19,9 @@ function mySort(array) {
     }
     // let obj = array.reduce((o, v, i) => {o[v] = v; return 0; }, {})
     // array = Object.keys(obj).map(num => parseInt(num))
-    // return console.log('output: ' + array)
+    // return console.log(array)
 
     array = Object.keys(array.reduce((o, v, i) => {o[v] = v; return 0;}, {})).map(num => parseInt(num));
-    console.log('output: ' + array);
+    console.log(array);
 }
 console.log(`Сортировка по возрастанию mySort ${mySort([5, 3, 23, 1, 18,])}`);
