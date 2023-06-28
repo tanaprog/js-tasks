@@ -6,11 +6,12 @@
  */
 
 function sum(array) {
-    return array.reduce((a,b) => a + b, 0)
     if (array === []) {
         return console.log("Пустой массив")
     }
+    return array.reduce((num1, num2) => num1 + num2, 0) //указываем с какого числа мы хотим начать суммировать, 0 указываем если вдруг пустой масив
 }
+//reduce идет по всему мвссиву и возвращает одно значение (сумму)
 
 console.log(`Сумма чисел массива ${sum([1, 3, 23, -5])}`);
 console.log(`Сумма чисел массива  ${sum([9])}`);

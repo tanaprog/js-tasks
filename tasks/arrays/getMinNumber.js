@@ -7,8 +7,11 @@
  */
 
 function getMinNumber(array) {
+    if (array === []) {
+        return console.log("Пустой массив")
+    }
     let min = Math.min.apply(null, array)
-    console.log(min)
+    return min
 }
 
 console.log(`Минимальное число массива ${getMinNumber([23, 504, -3, 22])}`);
