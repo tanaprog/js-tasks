@@ -25,5 +25,4 @@ function mySort(array) {
     return result
 }
 
-
 console.log(`Сортировка по ВОЗРАСТтанию mySort ${mySort([5, 3, 23, 1, 18])}`);

@@ -5,8 +5,7 @@
  */
 
 function getCountNumber(array, num) {
-    return array.filter(elem => elem === num).length //на вход функция принимает элемент, 
-    //и сразу делаем проверку элемент === num
+    return array.filter(elem => elem === num).length
 }
 
 console.log(`Число встречается : ${getCountNumber([1, 1, 3, 3, 3, 23, 23, 23, 23, -5], 23)} раз(а)`);
