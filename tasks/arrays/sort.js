@@ -16,11 +16,11 @@ console.log(`Сортировка по Возрастанию ${sortArray([5, 3,
 function mySort(array) {
     let arrCopy = array.slice(0, array.length)
     let result = []
-    arrCopy.forEach(() => { //forEach - перебор элементов массива
+    arrCopy.forEach(() => {
         let minElementIndex = 0
-        minElementIndex = array.indexOf(Math.min.apply(Math, array))//indexOf() возвращает первый индекс
-        result.push(array[minElementIndex])//с помощью push() добавляются в другой массив
-        array.splice(minElementIndex, 1) //удаляет один эл. по индексу minElementIndex
+        minElementIndex = array.indexOf(Math.min.apply(Math, array))
+        result.push(array[minElementIndex])
+        array.splice(minElementIndex, 1)
     })
     return result
 }

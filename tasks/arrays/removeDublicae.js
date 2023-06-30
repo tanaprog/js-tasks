@@ -9,8 +9,7 @@
 function unique(array) {
     let result = []
     for (let num of array) {
-        if (!result.includes(num)) { //! преобразовывает в логическую оценку. Если оценка истина вернет false
-                                     // если ложь вернет true
+        if (!result.includes(num)) { 
             result.push(num)
         }
     }
