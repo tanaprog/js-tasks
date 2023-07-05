@@ -7,10 +7,10 @@
  */
 
 function getMaxNumber(array) {
-    if(array == []){
+    if(array.length < 1){
         return console.log("Пустой массив")
     }
-    let max = Math.max.apply(null, array)
+    let max = Math.max(...array)
     return max
 }
 

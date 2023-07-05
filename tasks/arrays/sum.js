@@ -6,7 +6,7 @@
  */
 
 function sum(array) {
-    if (array === []) {
+    if (array.length < 1) {
         return console.log("Пустой массив")
     }
     return array.reduce((acc, item) => acc + item, 0) //указываем с какого числа мы хотим начать суммировать, 0 указываем если вдруг пустой масив

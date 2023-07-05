@@ -17,12 +17,15 @@
  */
 
 
-function getDublicate(array){
+function getDublicate(array) {
+    if (array.length < 1) {
+        console.log("Array is empty")
+    }
     const result = {}
-    for(let element of array){
-        if(result[element] != undefined){
+    for (let element of array) {
+        if (result[element] != undefined) {
             result[element]++
-        }else{
+        } else {
             result[element] = 1
         }
     }
@@ -30,4 +33,5 @@ function getDublicate(array){
 }
 console.log(`${getDublicate([1, 1, 1, 3, 23, 23, -5])}`);
 console.log(`${getDublicate([1, 1, 1, 1, 1, 1, 1])}`);
+console.log(`${getDublicate([])}`);
 

@@ -7,10 +7,10 @@
  */
 
 function getMinNumber(array) {
-    if (array === []) {
+    if (array.length < 1) {
         return console.log("Пустой массив")
     }
-    let min = Math.min.apply(null, array)
+    let min = Math.min(...array)
     return min
 }
 
