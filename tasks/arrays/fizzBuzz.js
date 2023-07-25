@@ -8,15 +8,6 @@
  *  вывод fizzbuzz вместо чисел, кратных как 3, так и 5.
  */
 
-// function myFizz(n) {
-//     for (let i = 1; i < n; i++) {
-//         if (i % 3 == 0){
-//             console.log(i++)
-//         }
-//    }
-// }
-// myFizz(10)
-
 function myFizz(n) {
     for (let i = 1; i <= n; i++) {
         if (i % 3 == 0) {

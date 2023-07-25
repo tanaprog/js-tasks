@@ -9,19 +9,6 @@
  *
  */
 
-// let capital = {
-//     'Минск': 'Беларусь',
-//     'Москва': 'Россия',
-//     'Киев': 'Украина',
-// }
-
-// function getCapital(capital) {
-//     for (const [key, value] of Object.entries(capital)) {
-//         return console.log(`${key} - это ${value}`)
-//     }
-// }
-
-// console.log(getCapital(capital))
 
 const myObj = {
     'Минск': 'Беларусь',
@@ -30,8 +17,8 @@ const myObj = {
 }
 
 function getObject(myObj) {
-    for (const [key, value] of Object.entries(myObj)) {
-        console.log(`${key} - это ${value}`)
+    for (let key in myObj) {
+        console.log(key + ' - это ' + myObj[key]);
     }
 }
 getObject(myObj)

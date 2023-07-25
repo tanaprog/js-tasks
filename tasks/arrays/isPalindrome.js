@@ -9,17 +9,16 @@
  */
 
 function isPolindrom(str) {
-    str = str.toLowerCase().replace(/\W/g, '')
-    const strArray = [...str]
-    const newArray = []
-    strArray.forEach(element => {
-        newArray.unshift(element)
-    })
-    const reversedStr = newArray.join('')
-    console.log(str)
-    return str === reversedStr
+    str = str.toLowerCase().replace(/\s/g, ''); //экранируем метасимвол "\s", который обозначает пробел
+    if (str === str.split('').reverse().join('')) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+
 console.log(isPolindrom('sos'))
 console.log(isPolindrom('abba'))
-console.log(isPolindrom('hello'))
-console.log(isPolindrom('a roza upala na lapu Azora'))
+console.log(isPolindrom('привет'))
+console.log(isPolindrom('а роза упала на лапу Азора'))

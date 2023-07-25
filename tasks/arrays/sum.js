@@ -16,3 +16,20 @@ console.log(`Сумма чисел массива ${sum([1, 3, 23, -5])}`);
 console.log(`Сумма чисел массива  ${sum([9])}`);
 console.log(`Сумма чисел массива ${sum([33, 78, 105])}`);
 console.log(`Сумма чисел массива  ${sum([])}`);
+
+
+function sum(array) {
+    let mySum = 0
+    if (array.length < 1) {
+        return console.log("Пустой массив")
+    }
+    for (let el of array) {
+        mySum += el
+    }
+    return mySum
+}
+
+console.log(`Сумма чисел массива ${sum([1, 3, 23, -5])}`);
+console.log(`Сумма чисел массива  ${sum([9])}`);
+console.log(`Сумма чисел массива ${sum([33, 78, 105])}`);
+console.log(`Сумма чисел массива  ${sum([])}`);

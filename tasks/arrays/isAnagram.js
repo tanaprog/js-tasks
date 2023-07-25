@@ -8,16 +8,6 @@
  * asaab - asab  => false
  */
 
-// function isAnagram(str1, str2) {
-//     if (str1.length !== str2.length) {
-//         return false
-//     }
-//     let word1 = str1.split('').sort().join('')
-//     let word2 = str2.split('').sort().join('')
-//     let result = (str1 === str2)
-//     return result
-// }
-// console.log(isAnagram('Pap', 'paP'))
 
 function isAnagram(str1, str2) {
     if (str1.length !== str2.length) {
@@ -30,4 +20,6 @@ function isAnagram(str1, str2) {
     }
 }
 console.log(isAnagram('nap', 'pan'))
+console.log(isAnagram('Pap', 'paP'))
+console.log(isAnagram('asaab', 'asab'))
 
