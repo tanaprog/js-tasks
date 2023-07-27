@@ -6,7 +6,24 @@
  */
 
 
+// function reversArray(array) {
+//     return array.reverse()
+// }
+// reversArray([1, 5, 6, 3, 7])
+
 function reversArray(array) {
-    return array.reverse()
+    let newArr = []
+    for (let i = array.length - 1; i >= 0; i--) {
+        newArr.push(array[i])
+    }
+    return newArr
 }
-console.log(reversArray([1, 5, 6, 3, 7]))
+reversArray([1, 5, 6, 3, 7])
+
+
+// function reversArray(array) {
+//     for(let i = array.length; i >= 0; i--){
+//         console.log(array[i])
+//     }
+// }
+// reversArray([1, 5, 6, 3, 7])

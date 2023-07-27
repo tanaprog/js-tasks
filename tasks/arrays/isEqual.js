@@ -7,18 +7,8 @@
  */
 
 function compareArrays(array1, array2) {
-    return array1.length === array2.length && array1.every((value, index) => value === array2[index])
+    let first = [...array1].sort()
+    let second = [...array2].sort()
+    return first.length === second.length && first.every((value, index) => value === second[index])
 }
 console.log(compareArrays([1, 2, 3], [2, 3, 1]))
-
-function compareArrays(array1, array2) {
-    return array1.length === array2.length && array1.every((currentValue, array) => currentValue === array2[array])
-}
-console.log(compareArrays([1, 2, 3], [2, 3, 1])) //выводит true если элементы в одном порядке
-console.log(compareArrays([1, 1, 2, 3], [3, 2, 2, 1]))
-
-// function compareArrays(array1, array2) {
-//     return JSON.stringify(array1) === JSON.stringify(array2);
-// }
-// console.log(compareArrays([1, 2, 3], [1, 2, 3])) //выводит true если элементы в одном порядке
-// console.log(compareArrays([1, 1, 2, 3], [3, 2, 2, 1]))

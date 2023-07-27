@@ -6,7 +6,7 @@
  * @returns {Array}
  */
 
-function getSimpleArray(array){
-    return array.flat(2)
+function getSimpleArray(array) {
+    return array.flat(Infinity)
 }
 console.log(getSimpleArray([1, 2, [3, 4, [5]]]))
